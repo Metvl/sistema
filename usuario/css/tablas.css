@@ -1,0 +1,61 @@
+body {
+    background-image: url(../img/Fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo {
+    color: white;
+}
+
+.division {
+    border-bottom: 1px solid black;
+}
+
+.content {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    color: white;
+    border: 2px solid black;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+}
+
+table {
+    margin-top: 10px;
+    caption-side: bottom;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    color: white;
+}
+
+th {
+    background-color: blue;
+    color: white;
+}
+
+tr,
+th,
+td {
+    border: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.btnGris {
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
+.btnGris:hover {
+    color: gray;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    transition: 0.5s;
+}

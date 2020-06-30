@@ -1,0 +1,100 @@
+body {
+    background-image: url(../img/Fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo {
+    color: white;
+}
+
+.formulario {
+    padding: 20px;
+    border-radius: 25px;
+    color: red;
+    border: 2px solid black;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+}
+
+.form-control {
+    background-color: transparent;
+    color: white;
+    transition: 0.5s;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    background: transparent;
+    color: white;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: white;
+    box-shadow: none;
+}
+
+.btnAzul {
+    background: blue;
+    color: white;
+    transition: 0.5s;
+}
+
+.btnAzul:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid blue;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
+.division {
+    border-bottom: 1px solid black;
+}
+
+.btnVerde {
+    background: green;
+    color: white;
+    transition: 0.5s;
+}
+
+.btnVerde:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid green;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
+.btnRojo {
+    background: red;
+    color: white;
+    transition: 0.5s;
+}
+
+.btnRojo:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid red;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
+.btnGris {
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
+.btnGris:hover {
+    color: gray;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    transition: 0.5s;
+}
+
+.footer {
+    color: black;
+}
