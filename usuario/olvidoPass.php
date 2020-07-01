@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Transporte</title>
+    <title>Cambio de Contraseña</title>
     <link rel="icon" href="img/icono.ico">
     <!-- FRAMEWORK BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">

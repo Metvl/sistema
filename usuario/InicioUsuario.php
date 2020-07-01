@@ -11,7 +11,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <title>Home</title>
     <link rel="icon" href="img/icono.ico">
     <!-- FRAMEWORK BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -30,6 +30,7 @@
                     <div class="form-group text-center pt-3">
                         <h1 class="titulo">
                             <i class="fas fa-home"></i>
+                            <p>Home</p>
                         </h1>
                     </div>
                     <div class="form-group mx-sm-4">

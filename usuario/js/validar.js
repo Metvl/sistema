@@ -9,7 +9,7 @@ function validar() {
     password = document.getElementById("password").value;
 
     expresionCorreo = /\w+@+[a-z]+\.+[a-z]/;
-    /*expresionNombre = /@"[ A-Za-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ.-]+"/;*/
+    expresionNombre = /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/;
 
     if (nombre === "" || apellido === "" || rut === "" || correo === "" || telefono === "" || direccion === "" || password === "") {
         alert("Los campos son obligatorios");
@@ -18,7 +18,7 @@ function validar() {
         alert("Nombre inválido");
         return false;
     } else if (!expresionNombre.test(nombre)) {
-        alert("El nombre no debe tener ");
+        alert("El nombre no debe tener números");
         return false;
     } else if (apellido.length >= 30 || apellido.length <= 2) {
         alert("Apellido inválido");

@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Conductores</title>
-    <link rel="icon" href="../img/icono.ico">
+    <link rel="icon" href="./img/icono.ico">
     <!-- FRAMEWORK BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -37,7 +37,8 @@
                         <th>Nombre</th>
                         <th>Apellido</th>
                         <th>Correo</th>
-                        <th>Telefono</th>
+                        <th>Teléfono</th>
+                        <th>Acciones</th>
                     </tr>
                     <!--Consulta sql-->
                     <?php
@@ -50,8 +51,11 @@
                                         <td>". $mostrar['apellido']."</td>
                                         <td>". $mostrar['correo']. "</td>
                                         <td>". $mostrar['telefono']. "</td>
-                            
-                            </tr>";
+                                        <td>
+                                            <a href=''><button type='button' class='btn btn-success'>Modificar</button> </a>
+                                            <a href=''><button type='button' class='btn btn-danger'>Eliminar</button></a>
+                                        </td>
+                                </tr>";
                         }
                     ?>
                     </caption>

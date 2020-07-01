@@ -11,16 +11,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Registro Usuario</title>
+    <title>Agregar Autos</title>
     <link rel="icon" href="../img/icono.ico">
     <!-- FRAMEWORK BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
-    <!--JS-->
-    <!--<script src="validar.js"></script>
-    <script src="validarut.js"></script>-->
+    <!--js-->
 </head>
 
 <body>
@@ -35,15 +33,18 @@
                         <input type="text" class="form-control" placeholder="Patente" maxlength="7" id="patente" name="patente" required>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <input type="text" class="form-control" placeholder="Serie Motor" maxlength="10" id="serieMotor" name="serieMotor" required>
+                        <input type="text" class="form-control" placeholder="Serie Motor" maxlength="9" id="serieMotor" name="serieMotor" required>
                     </div>
                     <div class="form-group mx-sm-4">
                         <input type="text" class="form-control" placeholder="Capacidad de Carga" maxlength="15" id="capacidadCarga" name="capacidadCarga" required>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <textarea class="form-control" name="descripcionVehiculo" id="descripcion" cols="" rows="3" placeholder="Descripcion" maxlength="100" required></textarea>
+                        <textarea class="form-control" name="descripcionVehiculo" id="descripcionVehiculo" cols="" rows="3" placeholder="Descripcion" maxlength="100" required></textarea>
                     </div>
-
+                    <div class="form-group mx-sm-4">
+                        <input type="hidden" id="estado" name="estado" required>
+                    </div>
+                    
                     <div class="form-group mx-sm-4">
                         <input type="submit" class="btn btn-block btnAzul" value="Registrar" id="botonRegistrar" name="subm">
                     </div>
@@ -55,7 +56,7 @@
             </div>
         </div>
     </div>
-    <script src="../js/validarVehiculo.js"></script>
+<script src="js/validarVehiculo.js"></script>
 </body>
 
 </html>

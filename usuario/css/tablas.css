@@ -59,3 +59,31 @@ td {
     text-decoration-line: none;
     transition: 0.5s;
 }
+
+.btnVerde {
+    background: green;
+    color: white;
+    transition: 0.5s;
+}
+
+.btnVerde:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid green;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
+.btnRojo {
+    background: red;
+    color: white;
+    transition: 0.5s;
+}
+
+.btnRojo:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid red;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}

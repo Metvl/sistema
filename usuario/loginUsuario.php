@@ -12,7 +12,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Transporte</title>
+    <title>Transporte Olímpico</title>
     <link rel="icon" href="img/icono.ico">
     <!-- FRAMEWORK BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -60,11 +60,9 @@
 </body>
 
 <footer class="form-group text-center footer">
-
     <i class="fab fa-github"></i>
     <i class="fab fa-facebook-square"></i>
     <p class="fab fa-instagram"> Francisco Ojeda</p>
-
 </footer>
 
 </html>

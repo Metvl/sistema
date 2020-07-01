@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Registro Usuario</title>
+    <title>Cuenta Nueva</title>
     <link rel="icon" href="img/icono.ico">
     <!-- FRAMEWORK BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -21,7 +21,6 @@
             <div class="col-md-4 formulario">
                 <form action="inc/insertUsuario.php" method="POST" id="" name="" class="" onsubmit="return validar();">
                     <div class="form-group text-center">
-
                         <h1 class="titulo">
                             <i class="fas fa-user-plus"></i>
                             <p>Registro</p>

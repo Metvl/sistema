@@ -2,38 +2,31 @@
 // login.php
 session_start();
 include "conexionbd.php";
+$conection = conect();
 
 if(isset($_POST['subm'])){
     $conection = conect();
     $rut = mysqli_real_escape_string($conection,$_POST['rut']);
     $password = mysqli_real_escape_string($conection,$_POST['password']);
-    
-    /*$sql = $conection->query("SELECT rut, password FROM conductor WHERE rut='$rut';"); 
-    if ($sql->num_rows>0){
-        $data = $sql->fetch_array();
-        if(passoword_verify($password,$data['password'])){
-            $_SESSION['rut'] = $rut;
-            header('Location: ../inicioUsuario.php');
-        }
-    }*/
-        
-    
-    if ($rut != "" && $password != ""){
 
-        $sql_query = "select count(*) as cntUser from conductor where rut='".$rut."' and password='".$password."'";
-        $result = mysqli_query($conection,$sql_query);
+   
+    if(empty($rut) || empty($password)){
+        echo "<script>alert('Error. Ingrese Datos Validos'); </script>";
+        echo "<script>window.location.assign('loginUsuario.php');</script>";
+    }else{
+        $consulta= "SELECT rut, password FROM conductor WHERE rut='$rut' AND password='$password'";
+        $result = mysqli_query($conection,$consulta);
         $row = mysqli_fetch_array($result);
 
-        $count = $row['cntUser'];
-
-        if($count > 0){
-            $_SESSION['rut'] = $rut;
-            header('Location: ../inicioUsuario.php');
+        if($row>0){
+            session_start();
+            $_SESSION['rut']=$rut;
+            $_SESSION['password']= $password;
+            header("location: ../InicioUsuario.php");
         }else{
-            
-            header('Location: ../loginUsuario.php?error=1');
-            
+            echo "<script>alert('Error en la autentificación'); </script>";
+            echo "<script>window.location.assign('../loginUsuario.php');</script>";
         }
-    }
+    }  
 }
 ?>

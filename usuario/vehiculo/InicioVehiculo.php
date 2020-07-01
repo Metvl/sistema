@@ -14,7 +14,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <title>Vehículos</title>
     <link rel="icon" href="../img/icono.ico">
     <!-- FRAMEWORK BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">

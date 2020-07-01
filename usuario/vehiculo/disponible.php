@@ -11,7 +11,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Registro Usuario</title>
+    <title>Vehículos Disponibles</title>
     <link rel="icon" href="../img/icono.ico">
     <!-- FRAMEWORK BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -37,7 +37,6 @@
                         <th>Capacidad de carga</th>
                         <th>Descripción</th>
                         <th>Acciones</th>
-                        
                     </tr>
                     <!--Consulta sql-->
                     <?php
@@ -49,7 +48,13 @@
                             echo "<tr> 
                                     <td>". $mostrar['patente'] . "</td> 
                                     <td>". $mostrar['capacidadCarga']."</td>
-                                    <td>". $mostrar['descripcionVehiculo']. "</td>             
+                                    <td>". $mostrar['descripcionVehiculo']. "</td>
+                                    
+                                    <td>
+                                        <a href='modificarVehiculo.php?id=".$mostrar['patente']."'> <button type='button' class='btn btn-success'>Modificar</button> </a>
+                                        
+                                        <a href='deleteVehiculo.php?id=".$mostrar['patente']."'><button type='button' class='btn btn-danger'>Eliminar</button></a>
+                                    </td>
                                 </tr>";
                         }
                     ?>
