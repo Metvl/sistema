@@ -36,11 +36,11 @@
                         </h1>
                     </div>
                     <div class="form-group mx-sm-4 pt-3">
-                        <input type="text" class="form-control" placeholder="RUT" maxlength="10" id="rut" name="rut" oninput="checkRut(this)" required>
+                        <input type="text" class="form-control" placeholder="RUT" maxlength="10" id="rut" name="rut" oninput="checkRut(this)" autocomplete="off" required>
                         <script src="./js/validarRUT.js"></script>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <input type="password" class="form-control" placeholder="Contraseña" maxlength="12" id="password" name="password" required>
+                        <input type="password" class="form-control" placeholder="Contraseña" maxlength="12" id="password" name="password" autocomplete="off" required>
                     </div>
                     <div class="form-group mx-sm-4">
                         <input type="submit" class="btn btn-block btnAzul" name="subm" value="Entrar">

@@ -10,10 +10,10 @@
     $direccion = $_POST["direccion"];
     $password = $_POST["password"];
     
-    /*$hash = password_hash($password, PASSWORD_BCRYPT);*/
+    $hash = password_hash($password, PASSWORD_BCRYPT);
     
     //consulta sql inssertar
-    $insertar = "INSERT INTO  conductor (nombre, apellido, rut, correo, telefono, direccion, password) VALUES ('$nombre', '$apellido','$rut','$correo','$telefono','$direccion','$password');";
+    $insertar = "INSERT INTO  conductor (nombre, apellido, rut, correo, telefono, direccion, password) VALUES ('$nombre', '$apellido','$rut','$correo','$telefono','$direccion','$hash');";
     //ejercutar la consulta
     $resultado = mysqli_query($conection, $insertar);
     if(!$resultado){

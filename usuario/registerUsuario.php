@@ -12,7 +12,6 @@
     <script src="https://kit.fontawesome.com/410536779e.js" crossorigin="anonymous"></script>
     <!--CSS-->
     <link rel="stylesheet" href="css/estilos.css">
-    <!--JS-->
 </head>
 
 <body>
@@ -27,26 +26,26 @@
                         </h1>
                     </div>
                     <div class="form-group mx-sm-4 pt-0">
-                        <input type="text" class="form-control" placeholder="Nombre" maxlength="30" id="nombre" name="nombre" required>
+                        <input type="text" class="form-control" placeholder="Nombre" maxlength="30" id="nombre" name="nombre" autocomplete="off" required>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <input type="text" class="form-control" placeholder="Apellido" maxlength="30" id="apellido" name="apellido" required>
+                        <input type="text" class="form-control" placeholder="Apellido" maxlength="30" id="apellido" name="apellido" autocomplete="off" required>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <input type="text" class="form-control" placeholder="RUT" maxlength="10" id="rut" name="rut" oninput="checkRut(this)" required>
+                        <input type="text" class="form-control" placeholder="RUT" maxlength="10" id="rut" name="rut" oninput="checkRut(this)" autocomplete="off" required>
                         <script src="./js/validarRUT.js"></script>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <input type="email" class="form-control" placeholder="Correo" maxlength="25" id="correo" name="correo" required>
+                        <input type="email" class="form-control" placeholder="Correo" maxlength="25" id="correo" name="correo" autocomplete="off" required>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <input type="text" class="form-control" placeholder="Teléfono" maxlength="9" id="telefono" name="telefono" required>
+                        <input type="text" class="form-control" placeholder="Teléfono" maxlength="9" id="telefono" name="telefono" autocomplete="off" required>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <input type="text" class="form-control" placeholder="Dirección" maxlength="50" id="direccion" name="direccion" required>
+                        <input type="text" class="form-control" placeholder="Dirección" maxlength="50" id="direccion" name="direccion" autocomplete="off" required>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <input type="password" class="form-control" placeholder="Contraseña" maxlength="12" id="password" name="password" required>
+                        <input type="password" class="form-control" placeholder="Contraseña" maxlength="12" id="password" name="password" autocomplete="off" required>
                     </div>
                     <div class="form-group mx-sm-4">
                         <input type="submit" class="btn btn-block btnVerde" value="Registrar" id="botonRegistrar" name="subm">

@@ -30,16 +30,16 @@
                         <h1 class="titulo">Registro de vehículos</h1>
                     </div>
                     <div class="form-group mx-sm-4 pt-2">
-                        <input type="text" class="form-control" placeholder="Patente" maxlength="7" id="patente" name="patente" required>
+                        <input type="text" class="form-control" placeholder="Patente" maxlength="7" id="patente" name="patente" autocomplete="off" required>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <input type="text" class="form-control" placeholder="Serie Motor" maxlength="9" id="serieMotor" name="serieMotor" required>
+                        <input type="text" class="form-control" placeholder="Serie Motor" maxlength="9" id="serieMotor" name="serieMotor" autocomplete="off" required>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <input type="text" class="form-control" placeholder="Capacidad de Carga" maxlength="15" id="capacidadCarga" name="capacidadCarga" required>
+                        <input type="text" class="form-control" placeholder="Capacidad de Carga" maxlength="15" id="capacidadCarga" name="capacidadCarga" autocomplete="off" required>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <textarea class="form-control" name="descripcionVehiculo" id="descripcionVehiculo" cols="" rows="3" placeholder="Descripcion" maxlength="100" required></textarea>
+                        <textarea class="form-control" name="descripcionVehiculo" id="descripcionVehiculo" cols="" rows="3" placeholder="Descripcion" maxlength="100" autocomplete="off" required></textarea>
                     </div>
                     <div class="form-group mx-sm-4">
                         <input type="hidden" id="estado" name="estado" required>
