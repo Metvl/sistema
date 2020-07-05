@@ -14,8 +14,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="icon" href="img/icono.ico">
+    <title>Conductores</title>
+    <link rel="icon" href="../img/icono.ico">
     <!-- FRAMEWORK BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -32,35 +32,28 @@
                 <div class="">
                     <div class="form-group text-center pt-3">
                         <h1 class="titulo">
-                            <i class="fas fa-home"></i>
-                            <p>Home</p>
+                            <i class="fas fa-user"></i>
+                            <p>Conductores</p>
                         </h1>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <a href="InicioPerfil.php" class="btnVerde">
-                            <input type="success" class="btn btn-block btnVerde" value="Perfil">
+                        <a href="registerUsuario.php" class="btnAzul">
+                            <input type="success" class="btn btn-block btnAzul" value="Agregar Conductor">
                         </a>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <a href="vehiculo/InicioVehiculo.php" class="btnAzul">
-                            <input type="success" class="btn btn-block btnAzul" value="Vehículos">
+                        <a href="conductoresDisponibles.php" class="btnVerde">
+                            <input type="success" class="btn btn-block btnVerde" value="Conductores Disponibles">
                         </a>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <a href="inicioConductores.php" class="btnAzul">
-                            <input type="success" class="btn btn-block btnAzul" value="Conductores">
-                        </a>
-                    </div>
-                    <div class="form-group mx-sm-4">
-                        <a href="#" class="btnVerde">
-                            <input type="success" class="btn btn-block btnVerde" value="Movimientos">
-                        </a>
-                    </div>
-                    <div class="division mx-sm-4"></div>
-                    <div class="form-group mx-sm-4 pt-3">
                         <a href="inc/cerrarSesion.php" class="btnRojo">
                             <input type="success" class="btn btn-block btnRojo" value="Cerrar Sesión">
                         </a>
+                    </div>
+                    <div class="division mx-sm-4"></div>
+                    <div class="form-group text-center mt-2 mb-0">
+                        <span><a href="InicioUsuario.php" class="btnGris">Atrás</a></span>
                     </div>
                 </div>
             </div>

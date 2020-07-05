@@ -1,11 +1,11 @@
 <?php
-    if(isset($_GET["error"])&&$_GET["error"]==1){
+    /*if(isset($_GET["error"])&&$_GET["error"]==1){
         echo '<script>alert("Error el usuario no se encuentra registrado")</script>';
     }
 
     if(isset($_GET["success"])&&$_GET["success"]==2){
         echo '<script>alert("Registrado con éxito")</script>';
-    }
+    }*/
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -21,7 +21,6 @@
     <script src="https://kit.fontawesome.com/410536779e.js" crossorigin="anonymous"></script>
     <!--CSS-->
     <link rel="stylesheet" href="./css/estilos.css">
-    <!--JS-->
 </head>
 
 <body>
@@ -47,11 +46,6 @@
                     </div>
                     <div class="form-group text-center division mx-sm-4">
                         <span><a href="olvidoPass.php" class="btnGris">¿Olvidó su contraseña?</a></span>
-                    </div>
-                    <div class="form-group mx-sm-4">
-                        <a href="registerUsuario.php" class="btnVerde">
-                            <input type="success" class="btn btn-block btnVerde" value="Cuenta Nueva">
-                        </a>
                     </div>
                 </form>
             </div>

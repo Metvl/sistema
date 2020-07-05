@@ -29,6 +29,9 @@
                     <div class="form-group mx-sm-4">
                         <input type="password" class="form-control" placeholder="Contraseña nueva" maxlength="12" id="password" name="password" required>
                     </div>
+                    <div class="form-group mx-sm-4">
+                        <input type="password" class="form-control" placeholder="Contraseña nueva" maxlength="12" id="password2" name="password2" required>
+                    </div>
                     <div class="form-group mx-sm-4 btnAzul">
                         <input type="submit" class="btn btn-block btnAzul" value="Guardar Cambios">
                     </div>

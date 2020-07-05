@@ -8,7 +8,6 @@
 ?>
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <title>Perfil</title>
@@ -20,7 +19,6 @@
     <script src="https://kit.fontawesome.com/410536779e.js" crossorigin="anonymous"></script>
     <!--CSS-->
     <link rel="stylesheet" href="css/estilos.css">
-    <!--JS-->
 
 </head>
 
@@ -34,6 +32,11 @@
                             <i class="fas fa-user"></i>
                             <p>Perfil</p>
                         </h1>
+                    </div>
+                    <div class="form-group mx-sm-4">
+                        <a href="registroDatosPerfil.php" class="btnAzul">
+                            <input type="success" class="btn btn-block btnAzul" value="Modificar datos">
+                        </a>
                     </div>
                     <div class="form-group mx-sm-4">
                         <a href="./inc/cerrarSesion.php" class="btnRojo">

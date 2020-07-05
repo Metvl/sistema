@@ -18,5 +18,4 @@
         header('Location: ../vehiculo/InicioVehiculo.php?success=1');
     }
     mysqli_close($conection);
-
 ?>

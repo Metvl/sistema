@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    $varsesion = $_SESSION['rut'];
+    if($varsesion == null || $varsesion = ''){
+        header("Location: loginUsuario.php");
+        die();
+    }
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -25,9 +33,21 @@
                             <p>Registro</p>
                         </h1>
                     </div>
+                    <div class="form-group mx-sm-4 pt-0">
+                        <input type="text" class="form-control" placeholder="Nombre" maxlength="30" id="nombre" name="nombre" autocomplete="off" required>
+                    </div>
                     <div class="form-group mx-sm-4">
-                        <input type="text" class="form-control" placeholder="RUT" maxlength="10" id="rut" name="rut" oninput="checkRut(this)" autocomplete="off" required>
-                        <script src="./js/validarRUT.js"></script>
+                        <input type="text" class="form-control" placeholder="Apellido" maxlength="30" id="apellido" name="apellido" autocomplete="off" required>
+                    </div>
+                    
+                    <div class="form-group mx-sm-4">
+                        <input type="email" class="form-control" placeholder="Correo" maxlength="25" id="correo" name="correo" autocomplete="off" required>
+                    </div>
+                    <div class="form-group mx-sm-4">
+                        <input type="text" class="form-control" placeholder="Teléfono" maxlength="9" id="telefono" name="telefono" autocomplete="off" required>
+                    </div>
+                    <div class="form-group mx-sm-4">
+                        <input type="text" class="form-control" placeholder="Dirección" maxlength="50" id="direccion" name="direccion" autocomplete="off" required>
                     </div>
                     <div class="form-group mx-sm-4">
                         <input type="password" class="form-control" placeholder="Contraseña" maxlength="12" id="password" name="password" autocomplete="off" required>
@@ -37,7 +57,7 @@
                     </div>
                     <div class="division mx-sm-4"></div>
                     <div class="form-group text-center mt-2 mb-0">
-                        <span><a href="inicioConductores.php" class="btnGris">Atrás</a></span>
+                        <span><a href="InicioPerfil.php" class="btnGris">Atrás</a></span>
                     </div>
                 </form>
             </div>
