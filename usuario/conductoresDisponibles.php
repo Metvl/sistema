@@ -61,7 +61,7 @@
                                     
                                     <td>
                                         <a href='inc/editar.php?rut=".$mostrar['rut']."'> <button type='button' class='btn btn-warning'>Editar</button> </a>
-                                        <a href='inc/eliminar.php?rut=".$mostrar['rut']."'><button type='button' class='btn btn-danger'>eliminar</button></a>
+                                        <a href='#'><button type='button' class='btn btn-danger'>Eliminar</button></a>
                                     </td>
                                 </tr>";
                         }

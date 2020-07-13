@@ -57,7 +57,7 @@
                                         <td><input type='text' placeholder='". $mostrar['telefono']."'></td>
                                         <td><input type='text' placeholder='". $mostrar['direccion']."'></td> 
                                         <td>
-                                        <a href='procesarEditar.php'> <button type='button' class='btn btn-primary'>Editar</button> </a>
+                                        <a href='#'> <button type='button' class='btn btn-primary'>Editar</button> </a>
                                         </td>
                                     </tr>";
                             }

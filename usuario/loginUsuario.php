@@ -1,11 +1,4 @@
 <?php
-    /*if(isset($_GET["error"])&&$_GET["error"]==1){
-        echo '<script>alert("Error el usuario no se encuentra registrado")</script>';
-    }
-
-    if(isset($_GET["success"])&&$_GET["success"]==2){
-        echo '<script>alert("Registrado con éxito")</script>';
-    }*/
 ?>
 <!DOCTYPE html>
 <html lang="es">

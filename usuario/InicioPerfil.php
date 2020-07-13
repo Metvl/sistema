@@ -34,7 +34,7 @@
                         </h1>
                     </div>
                     <div class="form-group mx-sm-4">
-                        <a href="registroDatosPerfil.php" class="btnAzul">
+                        <a href="#" class="btnAzul">
                             <input type="success" class="btn btn-block btnAzul" value="Modificar datos">
                         </a>
                     </div>

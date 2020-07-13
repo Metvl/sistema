@@ -2,6 +2,7 @@
     include 'conexionbd.php';
     //recibe datos y almacenarlos.
     $conection = conect();
+
     $patente = $_POST["patente"];
     $serieMotor = $_POST["serieMotor"];
     $capacidadCarga = $_POST["capacidadCarga"];
