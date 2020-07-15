@@ -1,0 +1,58 @@
+Instalacion XAMPP
+
+- Descargar XAMPP:
+	- Página para descargar: https://www.apachefriends.org/es/download.html
+	- Elegir el sistema operativo de su computador
+	- Hacer click en el botón de descargar
+
+- Instalación de XAMPP:
+	- Buscar el archivo descargado
+	- Click derecho sobre el archivo y apretar "ejecutar como administrador"
+	- Una vez abierto el instalador del programa
+		- Apretar el botón Siguiente (Next>)
+		- Apretar el botón Siguiente (Next>)
+		- Elegir la ruta de instalacion de XAMPP (C:\xampp), luego apretar el botón Siguiente (Next>)
+		- Apretar el botón Siguiente (Next>)
+		- Apretar el botón Siguiente (Next>)
+		- El programa comenzará a instalarse
+		- Apretar el botón de Finalizar (Finish)
+		- Elegir el idioma para el programa (Inglés) y luego apretar el botón Guardar (Save)
+
+- Panel de Control XAMPP
+	- Apretar el boton Iniciar (Start) en la fila que dice "Apache"
+		- Aparecerá un numero bajo la columna "PID(s)" y bajo la columna "Port(s)"
+	- Apretar el boton Iniciar (Start) en la columna que dice "MySQL"
+		- Aparecerá un numero bajo la columna "PID(s)" y bajo la columna "Port(s)"
+
+
+Código Fuente
+
+- Descargar Codigo Fuente de la Pagina y el archivo .sql
+	- Página para descargar: https://github.com/Metvl/sistema
+		- Pulsar el botón que dice "Code" (Al lado del botón Go to file)
+		- Se desplegará un sub-menú
+			- Dentro de el sub-menú pulsar el botón Donwload ZIP (descargar en formato .ZIP)
+	- Buscar el archivo descargado (sistema-master)
+	- click derecho sobre el archivo y apretar "Extraer aqui" (de no aparecer esta opción descargar WinRAR https://www.winrar.es/descargas)
+
+- Abrir el archivo (sistema-master) y copiar la carpeta "usuario" que se encuentra en su interior
+- Presionar las teclas windows + r al mismo tiempo
+	- Se abrirá una ventana llamada "Ejecutar", dentro de ella colocará esta dirección (C:/xampp/htdocs) y se abrirá la carpeta htdocs ubicada en la direccion de xampp
+- Pegar la carpeta copiada (usuario) dentro de la carpeta htdocs
+
+
+Importar Dump (.sql) a phpMyAdmin
+	- Página de phpMyAdmin (http://localhost/phpmyadmin/)
+		- Dentro de la pagina buscaremos el botón "SQL" y apretamos click izquierdo
+			- Dentro del campo de texto pondremos (CREATE TABLE bdtransporte) y luego click derecho boton continuar
+		- Dentro de la página buscaremos el botón "Importar" y apretamos click izquierdo
+			- Apretar "Seleccionar archivo", y se abrirá una pestaña
+			- Seleccionar la ruta donde se encuentra la carpeta "usuario" (C:/htdocs/usuario/sql)
+			- Dentro de la carpeta "sql" se encuentra un archivo llamado "bdtransporte.sql"
+		- Apretamos el botón Abrir y se cerrará la pestaña
+		- Bajar la pagina y apretar el botón Continuar
+
+Ingreso al sistema
+	- Url: localhost/usuario/loginUsuario.php
+	- Para ingresar debe tener una cuenta (195332983), se recomienda escribirla manualmente ,ya que ,el mismo login agregá el guión en el rut
+	- La contraseña de esa cuenta es: 123456 (En la base de datos está con Hash)

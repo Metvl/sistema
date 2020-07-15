@@ -15,7 +15,7 @@ function validarVehiculo() {
         alert("La patente es muy larga");
         return false;
     } else if (!expresionPatente.test(patente)) {
-        alert("La patente EJ: ASDA-12");
+        alert("La patente EJ: ASDA-12 o AS-1234");
         return false;
     } else if (serieMotor.length <= 4) {
         alert("Serie de motor inválida");
