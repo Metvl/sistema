@@ -1,16 +1,17 @@
 <?php
     include 'conexionbd.php';
     $conection = conect();
-    $rut = $_GET["rut"];
+    $rut = $_POST["rut"];
     $nombre = $_POST["nombre"];
     $apellido = $_POST["apellido"];
     $correo = $_POST["correo"];
     $telefono = $_POST["telefono"];
     $direccion = $_POST["direccion"];
-    
-    $actualizar = "UPDATE conductor SET nombre='$nombre',apellido='$apellido',correo='$correo', telefono='$telefono', direccion='$direccion' WHERE rut='$rut';";
+   
+    $actualizar = "UPDATE conductor SET nombre='$nombre', apellido='$apellido', correo='$correo', telefono='$telefono', direccion='$direccion' WHERE rut='$rut'";
     
     $resultado = mysqli_query($conection, $actualizar);
+
 
     if(!$resultado){
         echo "<script>alert('ERROR al actualizar'); </script>";
@@ -22,3 +23,4 @@
     }
 
 ?>
+

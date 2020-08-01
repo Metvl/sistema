@@ -53,6 +53,11 @@
                     </div>
                     <div class="form-group mx-sm-4">
                         <a href="#" class="btnVerde">
+                            <input type="success" class="btn btn-block btnVerde" value="Vincular Vehículos">
+                        </a>
+                    </div>
+                    <div class="form-group mx-sm-4">
+                        <a href="#" class="btnVerde">
                             <input type="success" class="btn btn-block btnVerde" value="Movimientos">
                         </a>
                     </div>

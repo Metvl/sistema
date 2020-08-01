@@ -60,12 +60,13 @@
                                     
                                     
                                     <td>
-                                        <a href='inc/editar.php?rut=".$mostrar['rut']."'> <button type='button' class='btn btn-warning'>Editar</button> </a>
-                                        <a href='#'><button type='button' class='btn btn-danger'>Eliminar</button></a>
+                                        <a href='inc/editarConductor.php?rut=".$mostrar['rut']."'> <button type='button' class='btn btn-warning'>Editar</button> </a>
+                                        <a href='inc/eliminarConductor.php?rut=".$mostrar['rut']."'><button type='button' class='btn btn-danger'>Eliminar</button></a>
                                     </td>
                                 </tr>";
                         }
                     ?>
+                    
                     </caption>
                 </table>
                 <div class="division mx-sm-4"></div>
@@ -75,6 +76,7 @@
             </div>
         </div>
     </div>
+    
 </body>
 
 </html>

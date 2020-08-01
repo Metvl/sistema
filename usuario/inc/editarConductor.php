@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Editar</title>
-    <link rel="icon" href="img/icono.ico">
+    <link rel="icon" href="../img/icono.ico">
     <!-- FRAMEWORK BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -31,7 +31,7 @@
                     <h2 class="titulo">Editar</h2>
                 </div>
                 <div class="division mx-sm-4"></div>
-                <form action="procesarEditar.php" method="POST">
+                <form action="procesarEditarConductor.php" method="POST">
                     <table class="text-center form-group table table-hover table-sm">
                         <caption>
                         <tr>
@@ -40,7 +40,7 @@
                             <th>Correo</th>
                             <th>Teléfono</th>
                             <th>Dirección</th>
-                            <th>Operacion</th>
+                            <th>Acción</th>
                         </tr>
                         <!--Consulta sql-->
                         <?php
@@ -51,13 +51,14 @@
                             $resultado = mysqli_query($conexion,$consulta);
                             while($mostrar = mysqli_fetch_array($resultado)){  
                                 echo "<tr>
-                                        <td><input type='text' placeholder='". $mostrar['nombre']."'></td>
-                                        <td><input type='text' placeholder='". $mostrar['apellido']."'></td>
-                                        <td><input type='text' placeholder='". $mostrar['correo']."'></td>
-                                        <td><input type='text' placeholder='". $mostrar['telefono']."'></td>
-                                        <td><input type='text' placeholder='". $mostrar['direccion']."'></td> 
+                                        <input name='rut' type='hidden' value='". $mostrar['rut']."'>
+                                        <td><input name='nombre' type='text' value='". $mostrar['nombre']."'></td>
+                                        <td><input name='apellido' type='text' value='". $mostrar['apellido']."'></td>
+                                        <td><input name='correo' type='text' value='". $mostrar['correo']."'></td>
+                                        <td><input name='telefono' type='text' value='". $mostrar['telefono']."'></td>
+                                        <td><input name='direccion' type='text' value='". $mostrar['direccion']."'></td> 
                                         <td>
-                                        <a href='#'> <button type='button' class='btn btn-primary'>Editar</button> </a>
+                                        <a> <button type='submit' class='btn btn-primary'>Guardar Cambios</button> </a>
                                         </td>
                                     </tr>";
                             }

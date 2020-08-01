@@ -34,6 +34,7 @@
                     <caption>
                     <tr>
                         <th>Patente</th>
+                        <th>Serie de Motor</th>
                         <th>Capacidad de carga</th>
                         <th>Descripción</th>
                         <th>Acciones</th>
@@ -42,18 +43,19 @@
                     <?php
                         include '../inc/conexionbd.php';
                         $conexion = conect();
-                        $consulta = "SELECT  patente, descripcionVehiculo, capacidadCarga FROM vehiculo WHERE estado='0';";
+                        $consulta = "SELECT  * FROM vehiculo WHERE estado='0';";
                         $resultado = mysqli_query($conexion,$consulta);
                         while($mostrar = mysqli_fetch_array($resultado)){
                             echo "<tr> 
-                                    <td>". $mostrar['patente'] . "</td> 
+                                    <td>". $mostrar['patente'] . "</td>
+                                    <td>". $mostrar['serieMotor'] . "</td>
                                     <td>". $mostrar['capacidadCarga']."</td>
                                     <td>". $mostrar['descripcionVehiculo']. "</td>
                                     
                                     <td>
-                                        <a href='modificarVehiculo.php?id=".$mostrar['patente']."'> <button type='button' class='btn btn-warning'>Editar</button> </a>
+                                        <a href='editarVehiculo.php?patente=".$mostrar['patente']."'> <button type='button' class='btn btn-warning'>Editar</button> </a>
                                         
-                                        <a href='deleteVehiculo.php?id=".$mostrar['patente']."'><button type='button' class='btn btn-danger'>Eliminar</button></a>
+                                        <a href='eliminarVehiculo.php?patente=".$mostrar['patente']."'><button type='button' class='btn btn-danger'>Eliminar</button></a>
                                     </td>
                                 </tr>";
                         }
